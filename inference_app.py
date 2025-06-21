@@ -34,7 +34,7 @@ class Generator(nn.Module):
 # Load Generator
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 generator = Generator().to(device)
-generator.load_state_dict(torch.load("generator_mnist.pth", map_location=device))
+generator.load_state_dict(torch.load("generator_mnist3.pth", map_location=device))
 generator.eval()
 
 # Streamlit UI
